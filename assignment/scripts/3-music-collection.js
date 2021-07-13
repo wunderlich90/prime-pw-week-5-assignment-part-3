@@ -28,13 +28,20 @@ console.log('Album added: ', addToCollection ('Djesse Vol. 3', 'Jacob Collier', 
 function showCollection (collectionArray) {
   console.log(collectionArray.length);
   for(let i=0; i<collectionArray.length; i++) {
-    console.log(`${title} by ${artist}
-      published in ${yearPublished}`);
+    console.log('Album collection: ', collection [i]);
+    console.log(`${collection [i].title} by ${collection [i].artist}
+      published in ${collection [i].yearPublished}`);
   }
 }
 
 showCollection (collection);
 
-function findByArtist (artist){
+function findByArtist (artist, collectionArray){
   let resultArray = [];
+  for (let i=0; i<collectionArray; i++) {
+    console.log('Looping through array: ', collection [i]);
+    if (artist === collection [i].title) {
+      
+    }
+  }
 }
